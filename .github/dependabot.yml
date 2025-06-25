@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "submodules"
+    directory: "/" # root of the parent repo
+    schedule:
+      interval: "daily" # or "weekly" / "monthly"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    allow:
+      - dependency-type: "direct"
+    labels:
+      - automerge
+    open-pull-requests-limit: 5

@@ -1,0 +1,6 @@
+[submodule "web/app/themes/plus-framework"]
+	path = web/app/themes/plus-framework
+	url = git@github.com:PLUSCommunications/plus-framework.git
+[submodule "web/app/themes/plus-pro"]
+	path = web/app/themes/plus-pro
+	url = git@github.com:PLUSCommunications/plus-pro.git
