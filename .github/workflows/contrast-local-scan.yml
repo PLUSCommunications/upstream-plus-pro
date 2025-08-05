@@ -1,4 +1,4 @@
-name: Contrast - Scan with local scanner
+  name: Contrast - Scan with local scanner
 
   on:
     push:
