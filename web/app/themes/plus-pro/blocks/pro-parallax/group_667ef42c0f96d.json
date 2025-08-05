@@ -1,0 +1,95 @@
+{
+    "key": "group_667ef42c0f96d",
+    "title": "Pro Parallax",
+    "fields": [
+        {
+            "key": "field_667ef42c1ef2d",
+            "label": "Speed",
+            "name": "speed",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Relative to scroll speed, a negative number will result in slower movement and will layer the content further back. A positive number will result in faster speed and will layer the content further forward.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2,
+            "min": -10,
+            "max": 10,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_667efc7c422be",
+            "label": "Percentage",
+            "name": "percentage",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Adjust the vertical position of the container",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 50,
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66eb1f88fdd8c",
+            "label": "Float",
+            "name": "float",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "none",
+                "left": "left",
+                "center": "center",
+                "right": "right",
+                "full": "full"
+            },
+            "default_value": "none",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "pluspro\/parallax"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

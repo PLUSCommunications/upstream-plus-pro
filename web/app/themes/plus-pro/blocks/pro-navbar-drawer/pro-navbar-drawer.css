@@ -1,0 +1,25 @@
+.pro-navbar-drawer{background-color:white;position:fixed;z-index:22;top:calc(var(--pro-navbar-container--height) + var(--wp-admin--admin-bar--height, 0px));transition:0.2s all;pointer-events:none;overflow:auto;}
+
+
+
+.pro-navbar-drawer--full{display:flex;flex-direction:column;flex-wrap: nowrap !important;top:var(--wp-admin--admin-bar--height, 0px);left:0;right:0;height:calc(100dvh - var(--wp-admin--admin-bar--height, 0px))!important;max-width:100% !important;top:var(--wp-admin--admin-bar--height, 0px) !important;z-index:15;opacity:0;}
+.pro-navbar-drawer--full .pro-navbar-drawer__inner{margin:auto !important;padding-top:var(--wp--preset--spacing--05);padding-bottom:var(--wp--preset--spacing--05);}
+.pro-navbar-drawer__close{position:absolute;top:var(--wp--preset--spacing--05);right:var(--wp--preset--spacing--05);font-size:var(--wp--preset--font-size--h-4);}
+
+.pro-navbar-drawer--right{right:0;bottom:0;min-width:200px;transform:translate(100%,0) !important;height:calc(100dvh - var(--pro-navbar-container--height) - var(--wp-admin--admin-bar--height, 0px));}
+
+.pro-navbar-drawer--top{transform:translate(0, -150%) !important;right:0;left:0;max-height:calc(100dvh - var(--pro-navbar-container--height) - var(--wp-admin--admin-bar--height, 0px));}
+
+.pro-navbar-drawer--open{right:0;transform:translate(0,0) !important;opacity:1;pointer-events:auto;}
+
+/*in overlay mode top should be behind navbar when scrolled */
+header.wp-block-template-part.scrolled:has(.has-property-overlay) .pro-navbar-drawer--top{z-index:5;}
+
+/*in overlay mode right and top should extend to top*/
+header.wp-block-template-part:has(.has-property-overlay) .pro-navbar-drawer{top:var(--wp-admin--admin-bar--height, 0px);height:calc(100dvh - var(--wp-admin--admin-bar--height, 0px))}
+
+/*in overlay mode but when sticky add extra space up top again*/
+header.wp-block-template-part.scrolled .pro-navbar-drawer{top:calc(var(--pro-navbar-container--height) + var(--wp-admin--admin-bar--height, 0px));height:calc(100dvh - var(--pro-navbar-container--height) - var(--wp-admin--admin-bar--height, 0px));}
+
+/*in overlay mode but when sticky auto and menu is hiding remove extra space up top again*/
+header.wp-block-template-part.scrolled--down .pro-navbar-drawer{top:0;height:calc(100dvh - var(--wp-admin--admin-bar--height, 0px))}

@@ -1,0 +1,12 @@
+https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/
+  • appearanceTools (gutenberg required)
+    • border: color, radius, style, width
+    • color: link
+    • spacing: blockGap, margin, padding
+    • typography: lineHeight
+
+https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/
+
+https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json
+
+https://fullsiteediting.com/the-state-of-child-themes/#h-can-you-create-full-site-editing-child-themes

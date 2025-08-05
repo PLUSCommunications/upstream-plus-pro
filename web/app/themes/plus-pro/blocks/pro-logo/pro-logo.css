@@ -1,0 +1,45 @@
+.pro_logo{display:block;}
+.pro_logo[href="#"]{cursor:default;}
+.pro_logo__img{object-fit: contain;margin: 0 auto;}
+
+.pro_logo__img{display:none;}
+.pro_logo__img:first-child{display:block;}
+
+
+/* Conditons */
+  
+  /* Scrolled */
+	/* hide others, show scrolled */
+  .scrolled .pro_logo:has(.pro_logo__img--scrolled) .pro_logo__img:not(.pro_logo__img--scrolled){display:none;}
+  .scrolled .pro_logo:has(.pro_logo__img--scrolled) .pro_logo__img--scrolled{display:block;}
+
+  /* Tablet */
+  @media( min-width:601px ) and ( max-width:979px ){
+		
+		/* hide others, show tablet */
+    .pro_logo:has(.pro_logo__img--tablet) .pro_logo__img:not(.pro_logo__img--tablet){display:none;}
+    .pro_logo:has(.pro_logo__img--tablet) .pro_logo__img--tablet{display:block;}
+		
+		/* when scrolled but has tablet version, hide scrolled*/
+    .scrolled .pro_logo:has(.pro_logo__img--tablet) .pro_logo__img--scrolled{display:none;}
+    
+		/* when has tablet scrolled only show it */
+    .scrolled .pro_logo:has(.pro_logo__img--tabletscrolled) .pro_logo__img:not(.pro_logo__img--tabletscrolled){display:none;}
+    .scrolled .pro_logo:has(.pro_logo__img--tabletscrolled) .pro_logo__img--tabletscrolled{display:block;}
+  }
+  
+	/* Phone */
+  @media( max-width:600px ){
+    
+		/* hide others, show phone */
+    .pro_logo:has(.pro_logo__img--phone) .pro_logo__img:not(.pro_logo__img--phone){display:none;}
+    .pro_logo:has(.pro_logo__img--phone) .pro_logo__img--phone{display:block;}
+		
+		/* when scrolled but has phone version, hide scrolled*/
+		.scrolled .pro_logo:has(.pro_logo__img--phone) .pro_logo__img--scrolled{display:none;}
+    
+		/* when has phone scrolled only show it */
+    .scrolled .pro_logo:has(.pro_logo__img--scrolledphone) .pro_logo__img:not(.pro_logo__img--scrolledphone){display:none;}
+    .scrolled .pro_logo:has(.pro_logo__img--scrolledphone) .pro_logo__img--scrolledphone{display:block !important;}
+
+  }

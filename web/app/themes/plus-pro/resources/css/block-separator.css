@@ -1,0 +1,11 @@
+.wp-block-separator{border:none;background-color:rgba(0,0,0,0.1);width:100px;height:4px;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots){transform: translateX( max(-0.5 * var(--wp--style--global--content-size) + 50px , -0.5 * 100vw + var(--wp--style--root--padding-left) + 50px ) )!important;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignwide{transform: translateX( max(-0.5 * var(--wp--style--global--wide-size) + 50px , -0.5 * 100vw + var(--wp--style--root--padding-left) + 50px ) )!important;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignfull{transform: none !important;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).aligncenter{max-width: 100px;transform: none !important;}
+.wp-block-separator.is-style-wide{width:auto;height:1px;border:none;}
+.wp-block-separator.is-style-dots{height:1em;width:auto;}
+.wp-block-separator.is-style-dots:before{}
+
+/* undo the translateX that doesn't work inside of a flex container */
+.is-layout-flex > .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {transform: none !important;}

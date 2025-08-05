@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/pro-sculpt",
+  "version": "1.0.0",
+  "title": "Pro Sculpt",
+  "description": "A spacer that creates a bespoke transition",
+  "style": [ "file:./pro-sculpt.css"],
+  "category": "pro",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><polygon points='24 14 12 16 0 14 0 8 24 11 24 14'/><path fill='#f0803c' d='M23,16.18v2.82H1v-2.82l10.84,1.81.16.03.16-.03,10.84-1.81M24,15l-12,2L0,15v5h24v-5h0Z'/><path fill='#f0803c' d='M23,5v3.87L1,6.12v-1.12h22M24,4H0v3l24,3v-6h0Z'/></svg>",
+  "keywords": ["sculpt", "transition", "angle", "slant", "zigzag"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "pro-sculpt.php"
+  },
+  "supports": {
+      "anchor": false
+  }
+}

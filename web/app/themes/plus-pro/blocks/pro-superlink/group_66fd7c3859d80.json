@@ -1,0 +1,223 @@
+{
+    "key": "group_66fd7c3859d80",
+    "title": "Pro Superlink",
+    "fields": [
+        {
+            "key": "field_67acfbe96c9da",
+            "label": "Link Type",
+            "name": "link_type",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "external": "<i class=\"fa-solid fa-link\"><\/i>",
+                "internal": "<i class=\"fa-solid fa-file-lines\"><\/i>",
+                "hashtag": "<i class=\"fa-solid fa-hashtag\"><\/i>",
+                "contact": "<i class=\"fa-solid fa-envelope\"><\/i>",
+                "post": "<i class=\"fa-solid fa-table\"><\/i>"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_67acfc183eb34",
+            "label": "Link",
+            "name": "link_external",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67acfbe96c9da",
+                        "operator": "==",
+                        "value": "external"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_67ed6177128dd",
+            "label": "Target",
+            "name": "target",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67acfbe96c9da",
+                        "operator": "==",
+                        "value": "external"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "false": "Same Tab",
+                "_blank": "New Tab"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_67acfc1e3eb35",
+            "label": "Post\/Page Link",
+            "name": "link_internal",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67acfbe96c9da",
+                        "operator": "==",
+                        "value": "internal"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "post_status": "",
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_67acfc213eb36",
+            "label": "Anchor\/Modal ID",
+            "name": "link_hashtag",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67acfbe96c9da",
+                        "operator": "==",
+                        "value": "hashtag"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "#",
+            "append": ""
+        },
+        {
+            "key": "field_67acfc253eb37",
+            "label": "Contact Link",
+            "name": "link_contact",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "E.g. <em>mailto:example@example.com<\/em>, <em>tel:+123-123-1234<\/em>,  <em>sms:12345?&body=text here<\/em>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67acfbe96c9da",
+                        "operator": "==",
+                        "value": "contact"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66fd7c51edab1",
+            "label": "Transition Time",
+            "name": "transition_time",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Opacity of the \"hover\" content transitions from 0 to 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "0.2",
+            "min": 0,
+            "max": 5,
+            "allow_in_bindings": 0,
+            "step": "0.1",
+            "prepend": "",
+            "append": "s"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "pluspro\/pro-superlink"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1743610274
+}

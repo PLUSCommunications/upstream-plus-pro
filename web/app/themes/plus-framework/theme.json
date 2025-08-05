@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "42rem",
+      "wideSize": "75rem"
+    },
+    "spacing": {
+      "blockGap": true,
+      "spacingSizes": [
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 0.5)",
+          "slug": "05",
+          "name": "1"
+        },
+        {
+          "size": "clamp(1.2rem, 5vw, 4rem)",
+          "slug": "10",
+          "name": "2"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 1.5)",
+          "slug": "15",
+          "name": "3"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 2.0)",
+          "slug": "20",
+          "name": "4"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 2.5)",
+          "slug": "25",
+          "name": "5"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 3.0)",
+          "slug": "30",
+          "name": "6"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "lineHeight": false,
+      "textDecoration": false,
+      "fontSizes": [
+        {
+          "fluid": {
+            "min": ".75rem",
+            "max": "1rem"
+          },
+          "size": "0.875rem",
+          "slug": "small",
+          "name": "Small"
+        },
+        {
+          "fluid": {
+            "min": "0.875rem",
+            "max": "1.125rem"
+          },
+          "size": "1rem",
+          "slug": "base",
+          "name": "Base"
+        },
+        {
+          "fluid": {
+            "min": "1rem",
+            "max": "1.5rem"
+          },
+          "size": "1.25rem",
+          "slug": "h5",
+          "name": "H5"
+        },
+        {
+          "fluid": {
+            "min": "1.5rem",
+            "max": "2rem"
+          },
+          "size": "1.75rem",
+          "slug": "h4",
+          "name": "H4"
+        },
+        {
+          "fluid": {
+            "min": "1.75rem",
+            "max": "2.75rem"
+          },
+          "size": "2.25rem",
+          "slug": "h3",
+          "name": "H3"
+        },
+        {
+          "fluid": {
+            "min": "2.25rem",
+            "max": "3.25rem"
+          },
+          "size": "2.75rem",
+          "slug": "h2",
+          "name": "H2"
+        },
+        {
+          "fluid": {
+            "min": "3rem",
+            "max": "4rem"
+          },
+          "size": "3.5rem",
+          "slug": "h1",
+          "name": "H1"
+        }
+      ]
+    }
+  },
+  "styles": {},
+  "customTemplates": {},
+  "templateParts": [],
+  "patterns": []
+}

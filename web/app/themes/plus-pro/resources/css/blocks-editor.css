@@ -1,0 +1,21 @@
+.acf-innerblocks-container:empty{border:1px dashed #ccc;padding:1em;text-align:center;}
+.acf-innerblocks-container:empty:before{color:#ccc;content:'Empty Container Block';}
+
+.pro-block-handle{background-color:#fff;border-radius:20px;border-top-right-radius:0;box-shadow:2px 6px 16px rgba(0,0,0,0.2);height:30px;width:30px;position:absolute;right:calc(100% + 5px);transform:translateY(-50%);}
+.pro-block-handle:before{background-color:rgb(0, 124, 186);border-radius:10px;border-top-right-radius:0;content:'';display:block;height:20px;width:20px;margin:5px;}
+
+/*.acf-block-preview a{pointer-events:none;} this breaks buttons - dont recall why it is needed*/
+/*.acf-block-preview .swiper{overflow:hidden;}*/
+
+/* z-index is primarily so that absolutely positioned pro-parallax blocks stay behind content
+unsure if this will have a. negative impact elsewhere */
+.block-editor-block-list__layout .block-editor-block-list__block{z-index:1;}
+.acf-block-preview.wp-block-pluspro-parallax{z-index:0;}
+
+/* Important so the backend displays as the front end will */
+.block-editor-block-list__block{box-sizing:border-box;}
+
+/* custom format */
+.is-selected .pro-countup{
+  border-bottom: 1px dashed;
+}

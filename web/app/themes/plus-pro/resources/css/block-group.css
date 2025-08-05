@@ -1,0 +1,8 @@
+.wp-block-group-is-layout-flex.is-style-two-wide:not(.is-vertical) > *{flex:0 0 calc(50% - var(--wp--preset--spacing--05) / 2);min-width:16rem;}
+.wp-block-group-is-layout-flex.is-style-two-wide:not(.is-vertical).alignwide > *{min-width:24rem;}
+
+.wp-block-group-is-layout-flex.is-style-three-wide:not(.is-vertical) > *{flex:0 0 calc(33.33% - var(--wp--preset--spacing--05) * 2 / 3);min-width:12rem;}
+.wp-block-group-is-layout-flex.is-style-three-wide:not(.is-vertical).alignwide > *{min-width:20rem;}
+
+.wp-block-group-is-layout-flex.is-style-four-wide:not(.is-vertical) > *{flex:0 0 calc(25% - var(--wp--preset--spacing--05) * 3 / 4);min-width:8rem;}
+.wp-block-group-is-layout-flex.is-style-four-wide:not(.is-vertical).alignwide > *{min-width:18rem;}

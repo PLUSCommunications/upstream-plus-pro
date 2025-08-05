@@ -1,0 +1,41 @@
+.patch-unit-control-component .components-input-control__container input{height:40px !important;}
+.patch-unit-control-component .components-input-control__container .components-input-control__suffix{
+  align-items: center;
+  align-self: stretch;
+  box-sizing: border-box !important;
+  display: flex;
+  min-width: 40px !important;
+  max-width: 64px !important;
+}
+.patch-unit-control-component .components-input-control__container select{
+  text-transform:none !important;
+  appearance: none;
+  background: transparent;
+  border-radius: 1px !important;
+  border: none;
+  outline: none;
+  margin: 0px !important;
+  min-height: auto;
+  font-family: inherit;
+  box-sizing: border-box !important;
+  min-width: 24px !important;
+  max-width: 48px !important;
+  height: 24px !important;
+  padding: calc(4px) !important;
+  font-size: 13px  !important;
+  line-height: 1;
+  letter-spacing:0 !important;
+  margin-inline-end: calc(8px) !important;
+  white-space: nowrap;
+  width:auto !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patch-unit-control-component .components-input-control__container select:not(:disabled){
+  color:var(--wp-components-color-accent, var(--wp-admin-theme-color, #3858e9)) !important;
+}
+

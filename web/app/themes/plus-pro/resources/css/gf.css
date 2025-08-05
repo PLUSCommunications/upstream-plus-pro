@@ -1,0 +1,62 @@
+/* Structure defaults and overrides */
+	.gform-theme--api,
+	.gform-theme--framework{
+	
+	  --gf-font-size-primary: var(--wp--preset--font-size--base) !important;
+	  --gf-font-size-secondary: var(--wp--preset--font-size--base) !important;
+	  --gf-font-size-tertiary: calc(var(--wp--preset--font-size--base) * 0.8) !important;
+	  
+	  --gf-ctrl-btn-font-size: var(--gf-font-size-primary) !important;
+	  
+	  --gf-ctrl-size-sm: calc(var(--gf-font-size-primary)*2.5) !important;
+	  --gf-ctrl-size-md: calc(var(--gf-font-size-primary)*2.5) !important;
+	  --gf-ctrl-size-lg: calc(var(--gf-font-size-primary)*2.5) !important;
+	  
+	  --gf-padding-x: 1em !important;
+	  --gf-padding-y: 0.5em !important;
+	  --gf-field-gap-x: 1em !important;
+	  --gf-field-gap-y: 1em !important;
+	  --gf-form-gap-x: 1em !important;
+	  --gf-form-gap-y: 1em !important;
+	  
+	  --gf-form-footer-margin-y-start: 1em !important;
+	}
+	.gform_wrapper{
+	  --gf-ctrl-shadow: 0 0 0 transparent;
+	}
+	
+	.ginput_container input:not([type="checkbox"]):not([type="radio"]){padding:var(--gf-padding-y) var(--gf-padding-x) !important;}
+	
+	.gform_button,
+	.gform-button{font-family:var(--wp--custom--button-font-family) !important;}
+
+/* Changes */
+	.gform_wrapper:has(.hidden_label) .gform_required_legend{display:none;}
+	
+	/* Radio & Checkboxes */
+	input[type="checkbox"],
+	input[type="radio"]{align-self: center !important;}
+	
+
+/* Stupid GF clears the gap on mobile so i need to re-iterate */
+	.gform_fields {
+	    -moz-column-gap: var(--gf-form-gap-x) !important;
+	    column-gap: var(--gf-form-gap-x) !important;
+	}
+
+
+/* Custom classes for more control */
+
+	.gfp-inline-all_wrapper .gfp-inline-all .gform_fields{display:flex;flex-wrap:wrap;}
+	
+	.gfp-inline-all_wrapper .gfp-inline-all--center .gform_fields{justify-content:center;}
+	.gfp-inline-all_wrapper .gfp-inline-all--center .gform-footer{justify-content:center;}
+	
+	.gfp-inline-all_wrapper .gfp-inline-all--right .gform_fields{justify-content:flex-end;}
+	.gfp-inline-all_wrapper .gfp-inline-all--right .gform-footer{justify-content:flex-end;}
+	
+	.gfp-footer-center .gform-footer{justify-content:center;}
+	.gfp-footer-right .gform-footer{justify-content:flex-end;}
+	
+	.inline-choices .gfield_radio,
+	.inline-choices .gfield_checkbox{flex-direction:row !important;gap:calc(var(--gf-field-choice-gap) * 2.5) !important;}

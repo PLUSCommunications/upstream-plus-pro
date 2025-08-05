@@ -1,0 +1,27 @@
+
+.wp-block-pluspro-pro-ticker{overflow: hidden;}
+
+.pro-ticker{gap:var(--wp--style--block-gap);display: inline-flex;white-space: nowrap ;padding: 0 0 0 100%;-webkit-animation: ticker 60s linear infinite;animation: ticker 60s linear infinite;align-items:center;}
+
+.pro-ticker .pro-logos{display:inline-flex;flex-wrap:nowrap;}
+.pro-ticker .wp-block-image{flex-shrink: 0;} /* may be needed for other children of pro-ticker*/
+		
+@-webkit-keyframes ticker {
+  0% {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);visibility: visible;}
+  100% {-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}
+}
+@keyframes ticker {
+  0% {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);visibility: visible;}
+  100% {-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}
+}
+
+/*for the editor*/
+.wp-block-pluspro-pro-ticker .acf-innerblocks-container{gap:var(--wp--style--block-gap);display: inline-flex;white-space: nowrap ;align-items:center;}
+.wp-block-pluspro-pro-ticker .acf-innerblocks-container > *{white-space:nowrap !important;}
+
+.wp-block-pluspro-pro-ticker.is-selected .pro-ticker,
+.wp-block-pluspro-pro-ticker.has-child-selected .pro-ticker{-webkit-animation: none;animation: none;display:block !important;padding:0 var(--wp--preset--spacing--05);}
+.wp-block-pluspro-pro-ticker.is-selected .pro-ticker .acf-innerblocks-container,
+.wp-block-pluspro-pro-ticker.has-child-selected .pro-ticker .acf-innerblocks-container{display:block;}
+.wp-block-pluspro-pro-ticker.is-selected .pro-ticker .acf-innerblocks-container > *,
+.wp-block-pluspro-pro-ticker.has-child-selected .pro-ticker .acf-innerblocks-container > *{white-space:pre-wrap !important;}

@@ -1,0 +1,16 @@
+*[class*="pro-parallax--float"]{position:absolute !important;}
+*[class*="pro-parallax--float"] > *{transform:translateY(-50%);}
+
+.pro-parallax--float-left{left:0;margin-left:0 !important;}
+
+.pro-parallax--float-right{right:0;margin-right:0 !important;}
+
+.pro-parallax--float-center{left:calc(50% + var(--wp--style--root--padding-right));}
+.pro-parallax--float-center > *{transform:translate( -50%, -50%);}
+
+.pro-parallax--float-full{width: 100%;left: var(--wp--style--root--padding-left);right: var(--wp--style--root--padding-right);}
+.pro-parallax--float-full > *{transform:translateY(0, 0);}
+.pro-parallax--float-full figure.aligncenter{margin:0 auto;}
+
+
+.wp-block-group:has(.wp-block-pluspro-parallax){overflow:hidden;}

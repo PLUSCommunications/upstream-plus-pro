@@ -1,0 +1,715 @@
+{
+    "key": "group_66d0e3a522e4d",
+    "title": "Advanced",
+    "fields": [
+        {
+            "key": "field_66d0e3a504086",
+            "label": "Fontawesome Kit",
+            "name": "fontawesome_kit",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_67534b75f7d2c",
+            "label": "Typekit",
+            "name": "typekit",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_671aae3d80356",
+            "label": "Google Tag Manager (GTM)",
+            "name": "google_tag_manager",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_671aae4c80357",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671aae3d80356"
+                },
+                {
+                    "key": "field_671aaea080358",
+                    "label": "Tag",
+                    "name": "tag",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "GTM-",
+                    "append": "",
+                    "parent_repeater": "field_671aae3d80356"
+                }
+            ]
+        },
+        {
+            "key": "field_687ab333cd3f6",
+            "label": "Google API Key",
+            "name": "google_api_key",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687ab0ee6d371",
+            "label": "Schema",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_687ab1db90406",
+            "label": "Name",
+            "name": "organization_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687ab1226d373",
+            "label": "Logo",
+            "name": "organization_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_687ab1916d374",
+            "label": "Address",
+            "name": "organization_address",
+            "aria-label": "",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": "",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_687aba91c6b6d",
+            "label": "Email",
+            "name": "organization_email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abbf84ad4d",
+            "label": "Type",
+            "name": "organization_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Organization": "Organization",
+                "Person": "Person",
+                "LocalBusiness": "LocalBusiness",
+                "Corporation": "Corporation",
+                "EducationalOrganization": "EducationalOrganization",
+                "NGO": "NGO",
+                "ProfessionalService": "ProfessionalService",
+                "SportsOrganization": "SportsOrganization",
+                "PerformingGroup": "PerformingGroup",
+                "MedicalOrganization": "MedicalOrganization",
+                "ResearchOrganization": "ResearchOrganization",
+                "Consortium": "Consortium",
+                "WorkersUnion": "WorkersUnion",
+                "PoliticalParty": "PoliticalParty",
+                "GovernmentOrganization": "GovernmentOrganization",
+                "NewsMediaOrganization": "NewsMediaOrganization",
+                "FundingScheme": "FundingScheme",
+                "Cooperative": "Cooperative"
+            },
+            "default_value": "Organization",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_687abd2a4ad4e",
+            "label": "Description",
+            "name": "organization_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_687abd404ad4f",
+            "label": "Organization Founding Date",
+            "name": "organization_founding_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_687ab1ae6d375",
+            "label": "Phone Number",
+            "name": "organization_phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abd50person_fields",
+            "label": "Person Details",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h3>Person-Specific Information</h3><p>The following fields are for individual persons (like political candidates, executives, etc.)</p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_687abd60person_given_name",
+            "label": "Given Name (First Name)",
+            "name": "person_given_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abd70person_family_name",
+            "label": "Family Name (Last Name)",
+            "name": "person_family_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abd80person_job_title",
+            "label": "Job Title",
+            "name": "person_job_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "e.g., CEO, Presidential Candidate, Senator, etc.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abd90person_works_for",
+            "label": "Works For (Organization)",
+            "name": "person_works_for",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Name of the organization this person works for",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abda0person_birth_date",
+            "label": "Birth Date",
+            "name": "person_birth_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "Optional - for public figures",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d/m/Y",
+            "return_format": "Y-m-d",
+            "first_day": 1,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_687abdb0person_nationality",
+            "label": "Nationality",
+            "name": "person_nationality",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "e.g., American, Canadian, etc.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abdc0person_political_affiliation",
+            "label": "Political Affiliation",
+            "name": "person_political_affiliation",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Political party or affiliation",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687abdd0person_education",
+            "label": "Education",
+            "name": "person_education",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Educational background",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_687abbf84ad4d",
+                        "operator": "==",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Education",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_687abde0person_school",
+                    "label": "Institution",
+                    "name": "institution",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_687abdd0person_education"
+                },
+                {
+                    "key": "field_687abdf0person_degree",
+                    "label": "Degree",
+                    "name": "degree",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_687abdd0person_education"
+                }
+            ]
+        },
+        {
+            "key": "field_687abe00post_schema_tab",
+            "label": "Post Schema",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_687abe10post_schema_type",
+            "label": "Default Post Schema Type",
+            "name": "post_schema_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select the default schema type for blog posts and articles",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Article": "Article",
+                "NewsArticle": "NewsArticle",
+                "BlogPosting": "BlogPosting",
+                "ScholarlyArticle": "ScholarlyArticle",
+                "TechArticle": "TechArticle",
+                "Report": "Report"
+            },
+            "default_value": "Article",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "advanced"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1752874589
+}

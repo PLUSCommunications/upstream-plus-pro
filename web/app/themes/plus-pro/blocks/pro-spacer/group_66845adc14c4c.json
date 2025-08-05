@@ -1,0 +1,67 @@
+{
+    "key": "group_66845adc14c4c",
+    "title": "Pro Spacer",
+    "fields": [
+        {
+            "key": "field_66845adcebb81",
+            "label": "Variable Height",
+            "name": "variable_height",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "min": -10,
+            "max": 10,
+            "step": "",
+            "prepend": "",
+            "append": "vw"
+        },
+        {
+            "key": "field_66845bc4ebb82",
+            "label": "Fixed Height",
+            "name": "fixed_height",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 32,
+            "min": -120,
+            "max": 120,
+            "step": 8,
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "pluspro\/pro-spacer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1724714057
+}

@@ -1,0 +1,15 @@
+.pro-superlink{display:grid;grid-template:1fr / 1fr;text-decoration:none;height:100%;}
+
+.pro-superlink .superlink-default,
+.pro-superlink .superlink-hover{grid-column:1 / 2;grid-row:1 / 2;}
+
+.pro-superlink .superlink-hover{opacity:0;transition:var(--transition-time) all;pointer-events:none;z-index: 1;}
+.pro-superlink:hover .superlink-hover{opacity:1;pointer-events:default;}
+
+/*for the editor*/
+.pro-superlink > .acf-innerblocks-container{display:grid !important;grid-template:1fr / 1fr;} 
+.pro-superlink > .acf-innerblocks-container > *{margin-block-start: 0 !important;}
+.wp-block-pluspro-pro-superlink.is-selected .acf-innerblocks-container,
+.wp-block-pluspro-pro-superlink.has-child-selected .acf-innerblocks-container{display:block !important;}
+.wp-block-pluspro-pro-superlink.is-selected .acf-innerblocks-container .superlink-hover,
+.wp-block-pluspro-pro-superlink.has-child-selected .acf-innerblocks-container .superlink-hover{opacity:1;}

@@ -1,0 +1,24 @@
+
+.wp-block-pluspro-pro-sculpt{
+  position:relative;
+  margin-block-start:0 !important;
+  z-index:20 !important;
+}
+.wp-block-pluspro-pro-sculpt svg{display:block;}
+.wp-block-pluspro-pro-sculpt svg{
+  height:auto;
+  position:absolute;
+  left:0;
+  right:0;
+  width:100%;
+  z-index:5;
+  transform:scale(1);
+}
+
+
+.pro-sculpt--above svg{bottom:0;}
+.pro-sculpt--below svg{top:0;}
+
+/*make sure to clear margin of following element this should cover*/
+.pro-sculpt--below + *{margin-block-start:0 !important;}
+.wp-block-pluspro-pro-sculpt:has(.pro-sculpt--below) + *{margin-block-start:0 !important;}

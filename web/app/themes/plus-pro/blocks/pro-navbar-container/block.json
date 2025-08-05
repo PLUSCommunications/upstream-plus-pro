@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/pro-navbar-container",
+  "version": "1.0.0",
+  "title": "Pro Navbar Container",
+  "description": "This block is designed to contain your navbars content and control it's behaviors",
+  "style": [ "file:./pro-navbar-container.css"],
+  "category": "pro",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><polygon fill='none' stroke='#f0803c' points='3.04 11.05 2.87 10.07 3.86 10.23 4.43 9.42 5.01 10.23 5.99 10.07 5.83 11.05 6.64 11.63 5.83 12.21 5.99 13.19 5.01 13.02 4.43 13.83 3.86 13.02 2.87 13.19 3.04 12.21 2.23 11.63 3.04 11.05'/><path fill='none' stroke='currentColor' d='M10,10.88l1.5,1.5,1.5-1.5,1.5,1.5,1.5-1.5,1.5,1.5M23.5,10.88l-1.5,1.5-1.5-1.5-1.5,1.5M0,7h24M0,16h24'/></svg>",
+  "keywords": [""],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "pro-navbar-container.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "align": true,
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "color": {
+      "gradients": true,
+      "heading": true
+    },
+    "layout": {
+      "allowInheriting": true
+    },
+    "mode": false,
+    "shadow": true,
+    "spacing": {
+      "padding": true,
+      "blockGap": true
+    },
+    "typography": true
+  }
+}

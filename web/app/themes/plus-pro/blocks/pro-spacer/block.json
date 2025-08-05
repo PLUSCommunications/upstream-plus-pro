@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/pro-spacer",
+  "version": "1.0.0",
+  "title": "Pro Spacer",
+  "description": "A spacer that combines fixed and variable values and accepts negative values",
+  "category": "pro",
+  "style": [ "file:./pro-spacer.css" ],
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><line fill='none' stroke='currentColor' x1='12' y1='11' x2='12' y2='6'/><polyline fill='none' stroke='currentColor' points='9 9 12 6 15 9'/><line fill='none' stroke='currentColor' x1='12' y1='13' x2='12' y2='18'/><polyline fill='none' stroke='currentColor' points='15 15 12 18 9 15'/><line fill='none' stroke='#f0803c' x1='2' y1='4' x2='22' y2='4'/><line fill='none' stroke='#f0803c' x1='2' y1='20' x2='22' y2='20'/></svg>",
+  "keywords": ["spacer", "gap", "margin"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "pro-spacer.php"
+  },
+  "supports": {
+      "anchor": false
+  }
+}

@@ -1,0 +1,50 @@
+/* Post Template Carousel Styles */
+
+/* Only apply block display after Swiper is initialized */
+.wp-block-post-template.is-style-carousel.swiper {
+  /* Reset grid display when Swiper is active */
+  display: block !important;
+  grid-template-columns: none !important;
+  gap: 0 !important;
+}
+
+.wp-block-post-template.is-style-carousel .swiper-wrapper {
+  display: flex;
+  align-items:stretch;
+}
+
+.wp-block-post-template.is-style-carousel .swiper-slide {
+  /* Ensure slides don't shrink smaller than their content */
+  flex-shrink: 0;
+  width: auto;
+  list-style: none;
+}
+
+/* When slidesPerView is auto, use the CSS custom property for width */
+.wp-block-post-template.is-style-carousel.swiper-auto .swiper-slide {
+  width: var(--swiper-slide-width, 300px);
+}
+
+/* Navigation and pagination styling */
+.wp-block-post-template.is-style-carousel .swiper-button-next,
+.wp-block-post-template.is-style-carousel .swiper-button-prev {
+  color: var(--wp--preset--color--primary, #000);
+}
+
+.wp-block-post-template.is-style-carousel .swiper-button-next:after,
+.wp-block-post-template.is-style-carousel .swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.wp-block-post-template.is-style-carousel .swiper-pagination-bullet {
+  background: var(--wp--preset--color--primary, #000);
+}
+
+.wp-block-post-template.is-style-carousel .swiper-pagination-bullet-active {
+  background: var(--wp--preset--color--secondary, #666);
+}
+
+/* Make sure content within slides looks good */
+.wp-block-post-template.is-style-carousel .swiper-slide .wp-block-group {
+  height: 100%;
+}

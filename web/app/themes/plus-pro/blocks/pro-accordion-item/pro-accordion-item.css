@@ -1,0 +1,33 @@
+.pro-accordion-item{}
+.pro-accordion-item__heading{cursor:pointer;padding:var(--wp--preset--spacing--05) 0 ;margin:0;display:flex;gap:0.5em;justify-content:space-between;align-items:center;}
+
+.pro-accordion-item > .acf-innerblocks-container{max-height:0px;overflow:hidden;transition:0.2s all;}
+.pro-accordion-item--open > .acf-innerblocks-container,
+.wp-block-pluspro-pro-accordion.is-selected .acf-innerblocks-container,
+.wp-block-pluspro-pro-accordion.has-child-selected .acf-innerblocks-container{max-height:1000px;}
+
+.pro-accordion-item .acf-innerblocks-container *:first-child{margin-top:0;}
+.pro-accordion-item .acf-innerblocks-container *:last-child{margin-bottom: var(--wp--preset--spacing--05);}
+
+
+/*Icon Default */
+.pro-accordion-item__icon--default{font-size: 24px;display: block;height: 16px;position:relative;width: 16px;transition: 0.2s all;}
+.pro-accordion-item__icon--default:before, 
+.pro-accordion-item__icon--default:after {background-color: currentColor;content: '';display: block;height: 2px;width: 13px;position: absolute;top: 0;transition: 0.2s all;}
+.pro-accordion-item__icon--default:before {left: 0;transform-origin: top left;transform: rotate(45deg);}
+.pro-accordion-item__icon--default:after {right: 0;transform-origin: top right;transform: rotate(-45deg);}
+
+.pro-accordion-item--open .pro-accordion-item__icon--default{transform: rotate(90deg);margin-top: -8px;}
+.pro-accordion-item--open .pro-accordion-item__icon--default:before, 
+.pro-accordion-item--open .pro-accordion-item__icon--default:after {width: 25px;}
+
+
+/*Icon Swap*/
+.pro-accordion-item .pro-accordion-item__icon--swap > *:last-child{display:none;}
+.pro-accordion-item--open .pro-accordion-item__icon--swap > *:first-child{display:none;}
+.pro-accordion-item--open .pro-accordion-item__icon--swap > *:last-child{display:block;}
+
+/*Icon Rotate*/
+.pro-accordion-item .pro-accordion-item__icon--rotate{transition:0.5s transform;}
+.pro-accordion-item--open .pro-accordion-item__icon--rotate{transform:rotate(var(--open-rotate));}
+

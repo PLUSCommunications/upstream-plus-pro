@@ -1,0 +1,159 @@
+{
+  "acf": true,
+  "api": {
+    "private": false,
+    "public": false
+  },
+  "framework": {
+    "domain": true,
+    "meta": {
+      "description": {"description": "This is my descriptor of the site."}
+    }
+  },
+  "resources": {
+    "css": {
+      "gf": { "preload": true },
+      "base": true,
+      "swiper-bundle.min": true,
+      "photoswipe": false,
+      "photoswipe-dynamic-caption-plugin": false,
+      "blocks": ["block_assets", "editor"],
+      "blocks-editor": ["editor"],
+      "editor": ["editor"],
+      "post-template": ["block_assets", "editor"],
+      "block-group": "core/group",
+      "block-quote": "core/quote",
+      "block-separator": "core/separator"
+    },
+    "js": {
+      "site": {
+        "enqueue": "block_assets--front",
+        "attrs": {"async": true},
+        "deps": ["jquery"],
+        "in_footer": true,
+        "localize": {
+          "standard": "good luck",
+          "nonce": {
+            "fn": {
+              "wp_create_nonce": ["wp_rest"]
+            }
+          },
+          "enqueue": {
+            "fn": {
+              "is_user_logged_in": null
+            }
+          },
+          "fbID": {
+            "env": "fbID"
+          },
+          "location": {
+            "fn": {
+              "plus_theme::location": null
+            }
+          },
+          "place": {
+            "fn": {
+              "plus_theme->place": null
+            }
+          }
+        }
+      },
+      "rellax": {
+        "enqueue": "front"
+      },
+      "photoswipe.umd.min": {
+        "enqueue": "front"
+      },
+      "photoswipe-lightbox.umd.min": {
+        "enqueue": "front"
+      },
+      "photoswipe-dynamic-caption-plugin.umd.min": {
+        "enqueue": "front"
+      },
+      "count-up": {
+        "enqueue": "front"
+      },
+      "media-text": {
+        "enqueue": ["block_assets", "editor"]
+      },
+      "post-template": {
+        "enqueue": ["block_assets", "editor"]
+      },
+      "swiper-bundle.min": false,
+      "fontawesome": {
+        "src": "https://kit.fontawesome.com/8dbcef8d30.js",
+        "crossorigin": "anonymous",
+        "enqueue": ["block_assets", "editor"]
+      },
+      "list": false
+    },
+    "min": false
+  },
+  "plugins": [
+    {
+      "name": "Advanced Custom Fields PRO",
+      "slug": "advanced-custom-fields-pro",
+      "version": "6.3.11",
+      "source": "https://dmnlm6jyw2.execute-api.us-east-2.amazonaws.com/live/advanced-custom-fields-pro.zip",
+      "external_url": "http://advancedcustomfields.com/",
+      "force_activation": true,
+      "required": true
+    },
+    {
+      "name": "Pantheon Advanced Page Cache",
+      "slug": "pantheon-advanced-page-cache",
+      "force_activation": true,
+      "required": true
+    },
+    {
+      "name": "The SEO Framework",
+      "slug": "autodescription",
+      "force_activation": true,
+      "required": true
+    },
+    {
+      "name": "Cloudflare",
+      "slug": "cloudflare",
+      "force_activation": false,
+      "required": false
+    },
+    {
+      "name": "Gravity Forms",
+      "slug": "gravityforms",
+      "version": "2.9.2.3",
+      "source": "https://dmnlm6jyw2.execute-api.us-east-2.amazonaws.com/live/gravityforms.zip",
+      "external_url": "http://gravityforms.com/",
+      "force_activation": false,
+      "required": false
+    },
+    {
+      "name": "Gravity Forms Iterable",
+      "slug": "gravity-forms-iterable",
+      "version": "1.2.4.5",
+      "source": "https://dmnlm6jyw2.execute-api.us-east-2.amazonaws.com/live/gravity-forms-iterable.zip",
+      "force_activation": false,
+      "required": false
+    },
+    {
+      "name": "Redirection",
+      "slug": "redirection",
+      "force_activation": false,
+      "required": false
+    },
+    {
+      "name": "Send E-mails with Mandrill",
+      "slug": "send-emails-with-mandrill",
+      "force_activation": false,
+      "required": false
+    },
+    {
+      "name": "Stream",
+      "slug": "stream",
+      "force_activation": true,
+      "required": true
+    }
+  ],
+  "wp": {
+    "blocks": true
+  }
+}

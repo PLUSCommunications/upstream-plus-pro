@@ -1,0 +1,337 @@
+{
+  "version": 3,
+  "settings": {
+    "color": {
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "gradients": [
+        {
+          "slug": "black-to-white",
+          "gradient": "linear-gradient(#000000,#FFFFFF)",
+          "name": "Black to White"
+        }
+      ],
+      "palette": [
+        {
+          "color": "#ffffff",
+          "name": "Base",
+          "slug": "base"
+        },
+        {
+          "color": "#000000",
+          "name": "Contrast",
+          "slug": "contrast"
+        },
+        {
+          "color": "#F0803C",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#00314E",
+          "name": "Secondary",
+          "slug": "secondary"
+        },
+        {
+          "color": "#EEEEEE",
+          "name": "Tertiary",
+          "slug": "tertiary"
+        }
+      ]
+    },
+    "custom": {
+      "borderRadius": "4px"
+    },
+    "layout": {
+      "contentSize": "42rem",
+      "wideSize": "75rem"
+    },
+    "shadow": {
+			"presets": [
+				{
+					"name": "Pro",
+					"slug": "pro",
+					"shadow": "8px 8px 24px rgba(0, 0, 0, 0.1)"
+				},
+				{
+					"name": "Neon",
+					"slug": "neon",
+					"shadow": "16px 16px 32px var(--wp--preset--color--secondary), -16px -16px 32px var(--wp--preset--color--primary)"
+				}
+			]
+		},
+    "spacing": {
+      "blockGap": true,
+      "spacingSizes": [
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 0.5)",
+          "slug": "05",
+          "name": "1"
+        },
+        {
+          "size": "clamp(1.2rem, 5vw, 4rem)",
+          "slug": "10",
+          "name": "2"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 1.5)",
+          "slug": "15",
+          "name": "3"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 2.0)",
+          "slug": "20",
+          "name": "4"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 2.5)",
+          "slug": "25",
+          "name": "5"
+        },
+        {
+          "size": "calc(clamp(1.2rem, 5vw, 4rem) * 3.0)",
+          "slug": "30",
+          "name": "6"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "lineHeight": true,
+      "textDecoration": true,
+      "fontSizes": [
+        {
+          "fluid": {
+            "min": ".6rem",
+            "max": "0.875rem"
+          },
+          "size": "0.7375rem",
+          "slug": "tiny",
+          "name": "Tiny"
+        },
+        {
+          "fluid": {
+            "min": ".75rem",
+            "max": "1rem"
+          },
+          "size": "0.875rem",
+          "slug": "small",
+          "name": "Small"
+        },
+        {
+          "fluid": {
+            "min": "0.875rem",
+            "max": "1.125rem"
+          },
+          "size": "1rem",
+          "slug": "base",
+          "name": "Base"
+        },
+        {
+          "fluid": {
+            "min": "1rem",
+            "max": "1.5rem"
+          },
+          "size": "1.25rem",
+          "slug": "h-5",
+          "name": "H5"
+        },
+        {
+          "fluid": {
+            "min": "1.5rem",
+            "max": "2rem"
+          },
+          "size": "1.75rem",
+          "slug": "h-4",
+          "name": "H4"
+        },
+        {
+          "fluid": {
+            "min": "1.75rem",
+            "max": "2.75rem"
+          },
+          "size": "2.25rem",
+          "slug": "h-3",
+          "name": "H3"
+        },
+        {
+          "fluid": {
+            "min": "2.25rem",
+            "max": "3.25rem"
+          },
+          "size": "2.75rem",
+          "slug": "h-2",
+          "name": "H2"
+        },
+        {
+          "fluid": {
+            "min": "3rem",
+            "max": "4rem"
+          },
+          "size": "3.5rem",
+          "slug": "h-1",
+          "name": "H1"
+        },
+        {
+          "fluid": {
+            "min": "4.5rem",
+            "max": "6rem"
+          },
+          "size": "5.25rem",
+          "slug": "huge",
+          "name": "Huge"
+        },
+        {
+          "fluid": {
+            "min": "6rem",
+            "max": "8rem"
+          },
+          "size": "7rem",
+          "slug": "gargantuan",
+          "name": "Gargantuan"
+        }
+      ],
+      "fontStyle": true,
+      "fontWeight": true
+    },
+    "blocks": {
+			"core/media-text": {
+        "border": {
+          "boxShadow": true
+        }
+      },
+      "core/navigation": {
+        "color": {
+          "text": "#cccccc"
+        }
+      },
+      "core/quote": {
+        "spacing": {
+          "blockGap": false
+        }
+      }
+    },
+    "useRootPaddingAwareAlignments": true,
+    "appearanceTools": true
+  },
+  "styles": {
+    "elements": {
+      "heading": {
+        "typography": {
+          "lineHeight": "1.1"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h-1)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h-2)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h-3)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h-4)"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h-5)"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--base)"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--primary)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--secondary)"
+          }
+        }
+      },
+      "button": {
+        "color": {
+          "text": "#fff",
+          "background": "var:preset|color|primary"
+        },
+        ":hover": {
+          "color": {
+            "text": "#fff",
+            "background": "var:preset|color|secondary"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/list-item": {
+        "spacing": {
+          "margin": {
+            "top": "0.5em",
+            "bottom": "0.5em"
+          }
+        }
+      },
+      "core/navigation": {
+        "elements": {
+					"link": {
+						":hover": {
+							"typography": {
+							},
+							"color": {
+							}
+						}
+					}
+				},
+        "__experimentalStyle": {
+          "elements": {
+            "link": {
+              "color": {
+                "text": "inherit"
+              }
+            }
+          }
+        },
+        "css": "/* & .wp-block-navigation-item__content.wp-block-navigation-item__content{ color: revert-layer !important }/* Until wordpress supports this */"
+      }
+    },
+    "color": {
+      "background": "var(--wp--preset--color--base)",
+      "text": "var(--wp--preset--color--contrast)"
+    },
+    "spacing": {
+      "padding": {
+        "top": "0px",
+        "right": "var(--wp--preset--spacing--10)",
+        "bottom": "0px",
+        "left": "var(--wp--preset--spacing--10)"
+      },
+      "blockGap": "var(--wp--preset--spacing--05)"
+    },
+    "typography": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "var(--wp--preset--font-size--base)",
+      "lineHeight": "1.5"
+    }
+  },
+  "customTemplates": [
+    {"name": "custom-landing-page", "title": "Landing Page", "description": "This template only contains page content, allowing you to build a page without header and footer parts."}
+  ],
+  "templateParts": [
+    {"area": "header", "name": "header", "title": "Header"},
+    {"area": "footer", "name": "footer", "title": "Footer"}
+  ],
+  "patterns": []
+}

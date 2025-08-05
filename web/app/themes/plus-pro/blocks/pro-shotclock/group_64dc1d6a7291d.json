@@ -1,0 +1,84 @@
+{
+    "key": "group_64dc1d6a7291d",
+    "title": "Pro Shotclock",
+    "fields": [
+        {
+            "key": "field_64dc1d6a83725",
+            "label": "Timer",
+            "name": "timer",
+            "aria-label": "",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s",
+            "allow_in_bindings": 1
+        },
+        {
+            "key": "field_66687bf7811f6",
+            "label": "Show Labels?",
+            "name": "show_labels",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_673e43d15d32f",
+            "label": "On Finish",
+            "name": "on_finish",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "The class of the block you wish to hide - then show when the shotclock reaches 0.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "shotclockFinish",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "pluspro\/pro-shotclock"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1737498668
+}

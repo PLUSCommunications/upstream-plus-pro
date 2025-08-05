@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/pro-button",
+  "version": "1.0.0",
+  "title": "Pro Button",
+  "description": "A better button with icons and simple controls",
+  "style": [ "file:./pro-button.css"],
+  "category": "pro",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><path d='M23,8v8H1v-8h22M24,7H0v10h24V7h0Z'/><polyline fill='none' stroke='#f0803c' points='2.5 13.25 5 10.75 7.5 13.25 10 10.75 12.5 13.25 15 10.75'/><circle fill='none' stroke='#f0803c' cx='19.5' cy='12' r='2.5'/></svg>",
+  "keywords": ["button", "link", "call"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "pro-button.php"
+  },
+  "supports": {
+    "align": [ "left", "right"],
+    "anchor": false,
+    "color": {
+      "background": false,
+      "button": true,
+      "text": false
+    },
+    "mode": false,
+    "shadow": true,
+    "typography": {
+      "textAlign": true
+    }
+  },
+  "attributes": {
+    "style": {
+      "type": "object"
+    }
+  },
+  "allowedBlocks": ["core/paragraph"],
+  "parent": [ "pluspro/pro-buttons" ]
+}

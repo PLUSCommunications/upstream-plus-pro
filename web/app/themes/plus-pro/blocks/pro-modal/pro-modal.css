@@ -1,0 +1,42 @@
+/*maybe for alert only? width: var(--max-width) !important;*/
+
+
+/* Front-end only */
+dialog.pro_modal{border-width:0;border-radius:var(--wp--custom--border-radius);padding:var(--wp--preset--spacing--05);}
+dialog.pro_modal[data-dialog="modal"]{position: fixed !important;top: 50%;transform:translateY(-50%);padding:0;width: var(--max-width) !important;}
+
+dialog.pro_modal[data-dialog="alert"]{box-shadow: 1em 1em 3em rgba(0,0,0,0.2);z-index:999; width: var(--max-width) !important;}
+dialog.pro_modal--bottomleft[data-dialog="alert"]{bottom:0;left:0;margin-left:0 !important;position: fixed !important;}
+dialog.pro_modal--bottomright[data-dialog="alert"]{bottom:0;right:0;margin-right:0 !important;position: fixed !important;}
+dialog.pro_modal[open]::backdrop{background-color:var(--overlay-color);}
+
+
+/* Close Buttion Styling */
+.pro_modal__close{background:none;border:none;cursor:pointer;font-size:1.25em;position:absolute;z-index:2;top:0.25em;right:0.25em;}
+.pro_modal__close > *{pointer-events:none;}
+.pro_modal[data-dialog="modal"] .pro_modal__close{}
+.pro_modal[data-dialog="alert"] .pro_modal__close{}
+
+.pro_modal > *:nth-child(2){margin-top:0;}
+.pro_modal > *:last-child{margin-bottom:0;}
+
+/* Transitions */
+dialog.pro_modal--transition-fade{opacity: 0;transition: all 0.7s allow-discrete;}
+dialog.pro_modal--transition-fade[open] {opacity: 1;}
+
+dialog.pro_modal--transition-zoom{opacity: 0;transform:scale(0);transition: all 0.7s allow-discrete;}
+dialog.pro_modal--transition-zoom[open]{opacity: 1;transform:scale(1);}
+
+dialog.pro_modal--transition-zoom[data-dialog="modal"]{opacity: 0;transform-origin:50% 0;transform:scale(0) translateY(-50%);transition: all 0.7s allow-discrete;}
+dialog.pro_modal--transition-zoom[data-dialog="modal"][open]{opacity: 1;transform:scale(1) translateY(-50%);}
+
+dialog.pro_modal--transition-slideup[data-dialog="alert"]{transform-origin:50% 0;transform:translateY(100%);transition: all 0.7s allow-discrete;}
+dialog.pro_modal--transition-slideup[data-dialog="alert"][open]{transform:translateY(0%);}
+dialog.pro_modal--transition-slideup[data-dialog="modal"]{opacity: 0;transform-origin:50% 0;transform:translateY(100%);transition: all 0.7s allow-discrete;}
+dialog.pro_modal--transition-slideup[data-dialog="modal"][open]{opacity: 1;transform:translateY(-50%);}
+
+
+.acf-block-preview.wp-block-pluspro-pro-modal{border-radius:var(--wp--custom--border-radius);box-shadow: 1em 1em 3em rgba(0,0,0,0.2);padding:var(--wp--preset--spacing--05);}
+
+
+dialog.pro_modal.alignfull{margin-left:0;margin-right:0;width:calc(100% + var(--wp--preset--spacing--10)) !important; max-width:100vw !important;}

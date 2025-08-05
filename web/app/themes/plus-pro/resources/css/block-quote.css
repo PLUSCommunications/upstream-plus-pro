@@ -1,0 +1,4 @@
+.wp-block-quote.has-background{padding:var(--wp--preset--spacing--05);}
+.wp-block-quote.is-style-default{border-left:4px solid;padding-left:var(--wp--preset--spacing--05);}
+.wp-block-quote.is-style-plain{border:none;}
+.wp-block-quote cite{font-size:var(--wp--preset--font-size--small);font-style:italic;opacity:0.85;margin-top:1em;}

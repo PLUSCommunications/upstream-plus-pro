@@ -1,0 +1,14 @@
+.wp-block-pluspro-pro-shotclock{display:flex;}
+
+.block-editor-block-list__block > .wp-block-pluspro-pro-shotclock{width:100%;}
+
+.shotclock__unit{display:flex;flex-direction:column;align-items:center;width:3.25em;margin-block-start: 0 !important;margin-block-end: 0 !important;white-space: nowrap;}
+.shotclock__number{font-size:300% !important;margin:8px 0 ;line-height:100%;}
+.shotclock__unit-label{margin-bottom:8px;line-height:100%;}
+
+.shotclock__unit:last-child{display:none;}
+
+.shotclock--expired .shotclock__unit{opacity:0.5;}
+.shotclock--nolabels .shotclock__unit-label{display:none;}
+
+.shotclock--show{pointer-events:auto;position:static!important;opacity:1!important;}

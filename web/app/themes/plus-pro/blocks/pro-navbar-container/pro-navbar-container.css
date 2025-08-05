@@ -1,0 +1,18 @@
+header.wp-block-template-part{position: relative;z-index: 21;}
+header.wp-block-template-part:has(.is-position-sticky){top: calc(0px + var(--wp-admin--admin-bar--height, 0px));position: sticky;}
+
+
+/* Overlay Mode CSS */
+header.wp-block-template-part .has-property-overlay{transition:0.2s all;}
+header.wp-block-template-part:has(.has-property-overlay){height:0;}
+header.wp-block-template-part:not(.scrolled) .has-property-overlay{height:0;background-color:var(--pro-overlay-background) !important;color:var(--pro-overlay-text) !important;}
+
+header.wp-block-template-part:has(.is-position-sticky--auto){transition:0.2s all;}
+header.wp-block-template-part.scrolled--down:has(.is-position-sticky--auto){transform:translateY(-100%);}
+
+/* When in overlay mode, target the children for the -100% so it works*/
+header.wp-block-template-part.scrolled--down:has(.is-position-sticky--auto):has(.has-property-overlay) > *{transform:translateY(-100%);}
+
+
+.pro-navbar-container{position:relative;z-index:10;}
+.pro-navbar-container a:where(:not(.pro-button)) {color: inherit;}

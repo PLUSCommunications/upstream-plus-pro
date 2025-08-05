@@ -1,0 +1,41 @@
+/* layout:flex flow should work such that this isn't needed... but alas... */
+.wp-block-pluspro-pro-button{display:inline-flex;margin-block-start:0 !important;margin-block-end:0 !important;}
+
+.pro-button{border:2px solid transparent;border-radius:var(--wp--custom--border-radius);border-width:2px !important;display:inline-flex;gap:1em;padding:1em;align-items:center;transition:0.2s all;}
+/* container needs border radius to in case of drop shadow */
+.wp-block-pluspro-pro-button{border-radius:var(--wp--custom--border-radius);}
+
+.pro-button--icon-right{flex-direction:row;}
+.pro-button--icon-left{flex-direction:row-reverse;}
+
+.pro-button--align-flex-start{justify-content:flex-start;}
+.pro-button--align-space-between{justify-content:space-between;}
+.pro-button--align-center{justify-content:center;text-align:center;}
+.pro-button--align-flex-end{justify-content:flex-end;text-align:right;}
+
+/* space between text alignment changes with icon side */
+.pro-button--align-space-between.pro-button--icon-left{text-align:right;}
+
+.wp-block-pluspro-pro-button:has(.pro-button--width-full){width:100%;}
+.pro-button--width-full{width:100%;}
+
+/* wide width handling changes with align */
+.pro-button--width-wide.pro-button--align-flex-start{padding-right:4em;}
+.pro-button--width-wide.pro-button--align-flex-end{padding-left:4em;}
+.pro-button--width-wide.pro-button--align-center{padding-left:2em;padding-right:2em;}
+.pro-button--width-wide.pro-button--align-space-between{gap:4em;}
+
+.wp-element-button.pro-button--size-small{font-size:var(--wp--preset--font-size--small);gap:0.75em;padding:0.5em 0.75em;}
+.wp-element-button.pro-button--size-default{font-size:var(--wp--preset--font-size--base);}
+.wp-element-button.pro-button--size-large{font-size:var(--wp--preset--font-size--h-5);}
+
+.pro-button p{margin:0;line-height:100%;}
+
+/* ensure icon-only buttons have equal padding */
+.pro-button:has(p:empty){padding:calc(0.667em + 2px);}
+.pro-button--size-small:has(p:empty){padding:0.5em;}
+.pro-button:has(p:empty) p{display:none;}
+
+/* backend empty container should go away if icon is present */
+.wp-block-pluspro-pro-button:has(svg) .acf-innerblocks-container:empty{border:none;padding:0;}
+.wp-block-pluspro-pro-button:has(svg) .acf-innerblocks-container:empty:before{display:none;}

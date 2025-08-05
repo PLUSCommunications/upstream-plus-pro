@@ -1,0 +1,133 @@
+https://css-tricks.com/prefetching-preloading-prebrowsing/
+
+<link rel="dns-prefetch" href="//example.com">
+Probably use this instead <link rel="preconnect" href="https://css-tricks.com">
+Could also mayb use preload? https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload
+Would need to test all three to see the results.
+
+  • We would use this for say fontawesome pro kits.
+
+check out https://fullsiteediting.com/courses/full-site-editing-for-theme-developers/
+
+Block References:
+  https://fullsiteediting.com/block-reference/
+  https://github.com/WordPress/wordpress-develop/tree/trunk/src/wp-includes/blocks
+  https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src
+  
+Template Reference:
+  The template hierarchy -refresher
+  https://fullsiteediting.com/lessons/creating-block-based-themes/#h-step-2-add-your-first-block-template
+    
+    • index
+    • 404
+    • archive
+    • author
+    • category
+    • tag
+    • taxonomy
+    • date
+    • embed
+    • home
+    • front-page
+    • privacy-policy
+    • page
+    • search
+    • single
+    • singular
+    • attachment
+    
+Register Post Type with Templates
+  https://fullsiteediting.com/lessons/creating-block-templates-for-custom-post-types/
+  https://developer.wordpress.org/block-editor/reference-guides/core-blocks/
+  https://fullsiteediting.com/block-reference/
+  
+  
+Left off @ https://fullsiteediting.com/lessons/global-styles/#h-what-are-global-styles
+https://app.asana.com/0/1203209794108325/1203209794108387
+
+
+config.json
+
+{
+  "api": {
+    "private": false,
+    "public": false
+  },
+  "framework": {
+    "domain": true,
+    "meta": {
+      "description": {"description": "This is my descriptor of the site."}
+    }
+  },
+  "resources": {
+    "css": {
+      "gf": { "enqueue": false, "preload": true },
+      "base": true,
+      "theme": {
+        "deps": ["base"]
+      }
+    },
+    "js": {
+      "site": {
+        "attrs": {"async": true},
+        "deps": ["jquery"],
+        "in_footer": true,
+        "localize": {
+          "standard": "good luck",
+          "nonce": {
+            "fn": {
+              "wp_create_nonce": ["wp_rest"]
+            }
+          },
+          "enqueue": {
+            "fn": {
+              "is_user_logged_in": null
+            }
+          },
+          "fbID": {
+            "env": "fbID"
+          },
+          "location": {
+            "fn": {
+              "pxl_theme::location": null
+            }
+          },
+          "place": {
+            "fn": {
+              "pxl_theme->place": null
+            }
+          }
+        }
+      }
+    },
+    "min": false
+  },
+  "wp": {
+    "menus": {
+      "mobile": "Mobile",
+      "main-left": "Main Left",
+      "main-right": "Main Right",
+      "top-left": "Top Left",
+      "top-right": "Top Right",
+      "footer": "Footer"
+    },
+    "taxonomies": {
+      "genres": true
+    },
+    "post_types": {
+      "items": {
+        "menu_icon": "dashicons-book",
+        "query": {
+          "order": "ASC",
+          "orderby": "title"
+        },
+        "taxonomies": [ "category" ],
+        "template": [
+          [
+            "core/media-text", []
+          ]
+        ]
+      }
+    }
+  }
+}

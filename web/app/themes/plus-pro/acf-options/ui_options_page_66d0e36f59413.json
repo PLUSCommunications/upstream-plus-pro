@@ -1,0 +1,23 @@
+{
+    "key": "ui_options_page_66d0e36f59413",
+    "title": "Advanced",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Advanced",
+    "menu_slug": "advanced",
+    "parent_slug": "options-general.php",
+    "advanced_configuration": 0,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": false,
+    "description": "",
+    "menu_icon": [],
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1724965791
+}

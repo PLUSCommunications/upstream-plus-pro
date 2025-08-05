@@ -1,0 +1,10 @@
+/* Cannot use blockGap or vertical alignment because styles are dynamically generated 
+and it doesn't happen with our custom blocks */
+
+
+.wp-block-pluspro-pro-social-links{gap:max(var(--wp--style--block-gap), 1em);display:flex;}
+
+.block-editor-block-list__block > .wp-block-pluspro-pro-social-links{width:100%;}
+
+
+.pro-social-link{margin-block-start: 0 !important;margin-block-end: 0 !important;}

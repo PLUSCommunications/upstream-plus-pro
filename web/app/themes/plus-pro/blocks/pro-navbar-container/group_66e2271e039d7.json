@@ -1,0 +1,124 @@
+{
+    "key": "group_66e2271e039d7",
+    "title": "Pro Navbar Container",
+    "fields": [
+        {
+            "key": "field_66e2271e384fb",
+            "label": "Behavior",
+            "name": "behavior",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "static": "static",
+                "sticky": "sticky",
+                "sticky-auto": "sticky-auto"
+            },
+            "default_value": "static",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66e227a1384fc",
+            "label": "Overlay",
+            "name": "overlay",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "This will allow the navbar to overlay the content below it while at the top of the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_66e31151d294c",
+            "label": "Overlay Background",
+            "name": "overlay_background",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Overrides the default background while at the top of the page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66e227a1384fc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "rgba(255,255,255,0)",
+            "enable_opacity": 1,
+            "return_format": "string"
+        },
+        {
+            "key": "field_66e31365d294d",
+            "label": "Overlay Text",
+            "name": "overlay_text",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Overrides the default text color while at the top of the page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66e227a1384fc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "pluspro\/pro-navbar-container"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1726157700
+}

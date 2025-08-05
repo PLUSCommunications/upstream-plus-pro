@@ -1,0 +1,73 @@
+{
+  "framework": {
+    "domain": true
+  },
+  "resources": {
+    "css": {
+      "base": true,
+      "theme": {
+        "deps": ["base"]
+      }
+    },
+    "js": {
+      "icons": {
+        "src": "https://kit.fontawesome.com/570420dfdf.js",
+        "crossorigin": "anonymous"
+      },
+      "site": {
+        "in_footer": true
+      }
+    }
+  },
+  "wp": {
+    "menus": {
+      "mobile": "Mobile",
+      "main-left": "Main Left",
+      "main-right": "Main Right",
+      "top-left": "Top Left",
+      "top-right": "Top Right",
+      "footer": "Footer"
+    },
+    "post-types": {
+      "map": {
+        "menu_icon": "dashicons-location-alt",
+        "query_admin": {
+          "order": "ASC",
+          "orderby": "title"
+        }
+      },
+      "player": {
+        "menu_icon": "dashicons-universal-access-alt",
+        "query": {
+          "order": "ASC",
+          "orderby": "title",
+          "posts_per_page": -1,
+          "season": "config::season"
+        },
+        "query_admin": {
+          "order": "ASC",
+          "orderby": "title"
+        },
+        "supports": [ "title", "editor" ]
+      },
+      "team": {
+        "menu_icon": "dashicons-groups",
+        "query": {
+          "order": "ASC",
+          "orderby": "title",
+          "posts_per_page": -1,
+          "season": "config::season"
+        },
+        "query_admin": {
+          "order": "ASC",
+          "orderby": "title"
+        }
+      }
+    },
+    "taxonomies": {
+      "season": {
+        "object_type": [ "player", "team" ]
+      }
+    }
+  }
+}

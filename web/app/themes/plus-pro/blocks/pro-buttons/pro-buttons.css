@@ -1,0 +1,12 @@
+/* Cannot use blockGap or vertical alignment because styles are dynamically generated 
+and it doesn't happen with our custom blocks */
+
+.wp-block-pluspro-pro-buttons{display:flex;gap:1em;align-items:center;}
+
+.wp-block-pluspro-pro-buttons:has(.pro-button--width-full){width:100%;}
+
+/* needed for backend to preview with extra container*/
+.wp-block-pluspro-pro-buttons:has(.is-content-justification-center){justify-content: center;}
+.wp-block-pluspro-pro-buttons:has(.is-content-justification-right){justify-content: right;}
+.wp-block-pluspro-pro-buttons:has(.is-content-justification-space-between){justify-content: space-between;width:100%;}
+.wp-block-pluspro-pro-buttons.is-content-justification-space-between{width:100%;}

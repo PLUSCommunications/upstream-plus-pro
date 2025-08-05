@@ -1,0 +1,624 @@
+{
+    "key": "group_66e0a06df26e1",
+    "title": "Pro Settings",
+    "fields": [
+        {
+            "key": "field_673e1b73d8ab0",
+            "label": "Links",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<a href=\"\/wp-admin\/site-editor.php\">Full Site Editor<\/a> | <a href=\"\/wp-admin\/site-editor.php?canvas=edit\">Styles<\/a> | <a href=\"\/wp-admin\/site-editor.php?categoryId=header&postType=wp_template_part\">Header<\/a> | <a href=\"\/wp-admin\/site-editor.php?categoryId=footer&postType=wp_template_part\">Footer<\/a> | <a href=\"\/wp-admin\/site-editor.php?postType=wp_template\">Templates<\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66e0a06e3ce40",
+            "label": "Buttons",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_66e0a0a33ce41",
+            "label": "Border Radius",
+            "name": "border_radius",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "This will be used for buttons, form fields, images, etc.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 4,
+            "min": 0,
+            "max": 48,
+            "allow_in_bindings": 1,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66e0a0cf3ce42",
+            "label": "Button Styles",
+            "name": "button_styles",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "These styles will be added to Pro Button and Page Item blocks to keep your button styling consistent.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Style",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_66e0a0f23ce43",
+                    "label": "Style Name",
+                    "name": "style_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_66e0a1723ce45",
+                    "label": "Background",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_66e0a1fb3ce46",
+                    "label": "Border",
+                    "name": "border",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,0)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_66e0a2043ce47",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,1)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_67cb6295e28ac",
+                    "label": "CSS",
+                    "name": "btn_css",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "property\/value pairs",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_66eb4bcbeae26",
+                    "label": "Hover Background",
+                    "name": "hover_background",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_66eb4be9eae27",
+                    "label": "Hover Border",
+                    "name": "hover_border",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,0)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_66eb4bfceae28",
+                    "label": "Hover Text",
+                    "name": "hover_text",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,1)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                },
+                {
+                    "key": "field_67cb65a6f2790",
+                    "label": "Hover CSS",
+                    "name": "hover_btn_css",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_66e0a0cf3ce42"
+                }
+            ]
+        },
+        {
+            "key": "field_6734ece8bbbb3",
+            "label": "Navbars",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_6734ed17bbbb4",
+            "label": "Navbar Styles",
+            "name": "navbar_styles",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Style",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6734ed17bbbb5",
+                    "label": "Style Name",
+                    "name": "style_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_6734ed17bbbb8",
+                    "label": "Color",
+                    "name": "color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,1)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_6734ed17bbbbb",
+                    "label": "Hover Color",
+                    "name": "hover_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,1)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_6734ed17bbbb9",
+                    "label": "Item CSS",
+                    "name": "item_css",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "property\/value pairs only. e.g: \"background-color:#eee;border-bottom:1px solid #000;\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_6734eee3bbbbe",
+                    "label": "Item Hover CSS",
+                    "name": "item_hover_css",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "property\/value pairs only. e.g: \"background-color:#eee;border-bottom:1px solid #000;\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_67cb6a89ac59f",
+                    "label": "Scrolled",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0,
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_67cb6a9dac5a0",
+                    "label": "Color",
+                    "name": "color_scrolled",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,1)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_67cb6aa2ac5a1",
+                    "label": "Hover Color",
+                    "name": "hover_color_scrolled",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "rgba(255,255,255,1)",
+                    "enable_opacity": 1,
+                    "return_format": "string",
+                    "allow_in_bindings": 1,
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_67cb6ab1ac5a2",
+                    "label": "Item CSS",
+                    "name": "item_css_scrolled",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "property\/value pairs only. e.g: \"background-color:#eee;border-bottom:1px solid #000;\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_6734ed17bbbb4"
+                },
+                {
+                    "key": "field_67cb6ab8ac5a3",
+                    "label": "Item Hover CSS",
+                    "name": "item_hover_css_scrolled",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "property\/value pairs only. e.g: \"background-color:#eee;border-bottom:1px solid #000;\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_6734ed17bbbb4"
+                }
+            ]
+        },
+        {
+            "key": "field_66ec8f4a377ee",
+            "label": "Socials",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_66ec8f5d377ef",
+            "label": "Socials",
+            "name": "socials",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add a social link",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_66ec8f8b377f1",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_66ec8f5d377ef"
+                },
+                {
+                    "key": "field_66ec8f7f377f0",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_66ec8f5d377ef"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "pro-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1752872901
+}

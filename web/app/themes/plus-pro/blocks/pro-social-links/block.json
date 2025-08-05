@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/pro-social-links",
+  "version": "1.0.0",
+  "title": "Pro Social Links",
+  "description": "Link out to one or more social media sites as defined in \"Global Settings\"",
+  "category": "pro",
+  "style": [ "file:./pro-social-links.css" ],
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><rect fill='#f0803c' x='9.1' width='5.79' height='1.6'/><rect fill='#f0803c' x='9.1' y='3.2' width='5.79' height='1.6'/><rect fill='#f0803c' x='9.1' y='6.4' width='5.79' height='1.6'/><rect fill='#f0803c' x='9.1' y='16' width='5.79' height='1.6'/><rect fill='#f0803c' y='12.8' width='24' height='1.6'/><rect fill='#f0803c' y='9.6' width='24' height='1.6'/><rect fill='#f0803c' x='9.1' y='19.2' width='5.79' height='1.6'/><rect fill='#f0803c' x='9.1' y='22.4' width='5.79' height='1.6'/></svg>",
+  "keywords": ["link", "menu", "social", "facebook", "twitter", "x", "linkedin", "youtube"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "pro-social-links.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": false,
+    "spacing": {
+      "margin": [ "top", "bottom" ],
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true
+    },
+    "layout": {
+      "type": "flex",
+      "allowVerticalAlignment": false,
+      "allowOrientation": false
+    },
+    "color": {
+      "background": false,
+      "text": false,
+      "link": true
+    }
+  }
+}

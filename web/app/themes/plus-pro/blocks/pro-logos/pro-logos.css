@@ -1,0 +1,36 @@
+
+.wp-block-pluspro-pro-logos .swiper{padding-bottom:var(--wp--preset--spacing--05);}
+
+.pro-logos{display:flex;align-items:center;flex-wrap:wrap;}
+.pro-logos--center{justify-content:center;}
+.pro-logos--left{justify-content:flex-start;}
+.pro-logos--right{justify-content:flex-end;}
+.pro-logos--full{justify-content:space-between;flex-wrap:nowrap;}
+.pro-logos--full img{height: auto;max-width: 100%;}
+
+.pro-logos--grid{display:grid;gap:0 !important;}
+.pro-logos--grid .pro-logos__logo{flex:1;}
+
+.pro-logos__logo a,
+.pro-logos__logo img{display:block;margin:auto;}
+
+
+.pro-logos__logo div,
+.pro-logos__logo a{transition:0.2s all;} /*redefine transition on a for backend*/
+           
+.pro-logos__logo .hover-size{transform:scale(0.9);}
+.pro-logos__logo .hover-size:hover{transform:scale(1);}
+          
+.pro-logos__logo .hover-color{filter: grayscale(100%);opacity:0.5;}
+.pro-logos__logo .hover-color:hover{filter: grayscale(0%);opacity:1;}
+          
+.pro-logos__logo .hover-opacity{opacity:0.8;}
+.pro-logos__logo .hover-opacity:hover{opacity:1;}
+
+
+.pro-logos--swiper{flex-wrap:nowrap;gap:0 !important;}
+
+.pro-logos--swiper .pro-logos__logo.swiper-slide{display:flex;width:auto;justify-content:center;}
+
+
+.acf-block-preview .pro-logos--swiper{display:flex;flex-wrap:nowrap;}

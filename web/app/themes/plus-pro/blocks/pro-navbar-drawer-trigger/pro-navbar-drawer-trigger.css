@@ -1,0 +1,28 @@
+/* layout:flex flow should work such that this isn't needed... but alas... */
+.wp-block-pluspro-pro-button{display:inline-flex;margin-block-start:0 !important;margin-block-end:0 !important;}
+
+.pro-button{border:2px solid transparent;border-radius:var(--wp--custom--border-radius);border-width:2px !important;display:inline-flex;gap:1em;padding:1em;align-items:center;transition:0.2s all;}
+/* container needs border radius to in case of drop shadow */
+.wp-block-pluspro-pro-button{border-radius:var(--wp--custom--border-radius);}
+
+.pro-navbar-drawer-trigger{padding:calc(0.667em + 2px) calc(0.667em + 2px) !important;}
+.pro-navbar-drawer-trigger span{line-height:100%;}
+
+/*Icon Default */
+.pro-navbar-drawer-trigger__icon--default{display: block;height: 1em;position:relative;width: 1em;transition: 0.2s all;}
+.pro-navbar-drawer-trigger__icon--default:before{border-top: 2px solid currentColor;border-bottom: 2px solid currentColor;content: '';display: block;height: calc(1em - 4px);position: absolute;width: 1em;top:0;transition: 0.2s all;}
+.pro-navbar-drawer-trigger__icon--default:after {background-color: currentColor;content: '';display: block;height: 2px;width: 1em;position: absolute;top:calc(50% - 1px);transition: 0.2s all;}
+
+
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--default:before{border-top: 1px solid currentColor;border-bottom: 1px solid currentColor;height:0;top:calc(50% - 1px);transform: rotate(-45deg);}
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--default:after {transform: rotate(45deg);}
+
+
+/*Icon Swap*/
+.pro-navbar-drawer-trigger .pro-navbar-drawer-trigger__icon--swap > *:last-child{display:none;}
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--swap > *:first-child{display:none;}
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--swap > *:last-child{display:block;}
+
+/*Icon Rotate*/
+.pro-navbar-drawer-trigger .pro-navbar-drawer-trigger__icon--rotate{transition:0.5s transform;}
+.pro-navbar-drawer-trigger .pro-navbar-drawer-trigger__icon--rotate{transform:rotate(var(--open-rotate));}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/parallax",
+  "version": "1.0.0",
+  "title": "Pro Parallax",
+  "description": "A continer for controlling the position and parallax movement of it's contents",
+  "style": [ "file:./pro-parallax.css"],
+  "viewScript": [ "file:./pro-parallax.js" ],
+  "category": "pro",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><path fill='none' stroke='#f0803c' d='M2.62,11.12l3.13-3.12,3.12,3.12,3.13-3.12,3.13,3.12,3.12-3.12,3.13,3.12M21.38,15.5l-3.13-3.13-3.12,3.13-3.13-3.13-3.13,3.13-3.12-3.13-3.13,3.13'/><path fill='none' stroke='currentColor' d='M12,6V1M15,4l-3-3-3,3M12,18v5M9,20l3,3,3-3'/></svg>",
+  "keywords": ["parallax", "motif", "group"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "pro-parallax.php"
+  },
+  "supports": {
+      "anchor": false
+  }
+}

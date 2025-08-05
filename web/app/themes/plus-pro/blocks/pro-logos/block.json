@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/pro-logos",
+  "version": "1.0.0",
+  "title": "Pro Logos",
+  "description": "A custom block for displaying an array of logos.",
+  "script": [
+    "file:./pro-logos.js"
+  ],
+  "style": [
+    "file:./pro-logos.css",
+    "swiper-bundle.min"
+  ],
+  "category": "pro",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'>  <circle fill='none' stroke='#f0803c' cx='6.32' cy='11.67' r='4.67'/><circle fill='none' stroke='#f0803c' cx='5.03' cy='12.36' r='2.31'/><polygon fill='none' stroke='currentColor' points='13.64 15.75 18.54 7.58 23.44 15.75 13.64 15.75'/><polygon fill='none' stroke='currentColor' points='16.36 15.75 19.9 9.86 23.44 15.75 16.36 15.75'/></svg>",
+  "keywords": ["gallery", "logos", "companies", "clients", "businesses"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "pro-logos.php"
+  },
+  "supports": {
+    "anchor": true,
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "color": {
+      "heading": true
+    },
+    "color": {
+      "background": true,
+			"gradients": true,
+      "text": false
+    },
+    "shadow": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  }
+}

@@ -1,0 +1,3 @@
+.wp-block .swiper-wrapper.is-layout-flow{flex-wrap:initial;}
+.wp-block:has(.is-selected) .swiper-wrapper.is-layout-flow{flex-wrap:wrap;}
+.swiper-button-next,.swiper-button-prev{text-decoration:none;}

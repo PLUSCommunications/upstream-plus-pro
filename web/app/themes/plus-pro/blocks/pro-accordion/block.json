@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pluspro/pro-accordion",
+  "version": "1.0.0",
+  "title": "Pro Accordion",
+  "description": "The container block for a set of accordion items",
+  "script": [ "file:./pro-accordion.js" ],
+  "style": [ "file:./pro-accordion.css"],
+  "category": "pro",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><polyline fill='none' stroke='#f0803c' points='17 6 15 8 13 6 11 8 9 6 7 8 5 6 3 8'/><path fill='none' stroke='currentColor' d='M2,4h20M2,10h20M2,13h20M2,16h20M2,19h20'/><line fill='none' stroke='currentColor' x1='21.5' y1='5.75' x2='19' y2='8.25'/><line fill='none' stroke='currentColor' x1='21.5' y1='8.25' x2='19' y2='5.75'/></svg>",
+  "keywords": ["accordion", "expand", "details"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "pro-accordion.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": false,
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "color": {
+      "background": true,
+      "heading": true
+    },
+    "typography": {
+      "textAlign": true
+    },
+    "shadow": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "allowedBlocks": ["pluspro/pro-accordion-item"],
+  "providesContext": {"acf/fields": "data"}
+}

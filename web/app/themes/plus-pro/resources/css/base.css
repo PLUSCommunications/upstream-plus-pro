@@ -1,0 +1,139 @@
+/* Resets */
+  *{box-sizing:border-box;}
+  
+  html, body{-webkit-text-size-adjust: none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;scroll-behavior: smooth;}
+  @media screen and (prefers-reduced-motion: reduce) {
+  	html, body{scroll-behavior: auto;}
+  }
+  
+  b, strong{font-weight:600;}
+  
+  a{transition:0.2s all;}
+
+    
+/* Layout */
+  .wp-site-blocks{display:flex;flex-direction:column;min-height:calc(100dvh - var(--wp-admin--admin-bar--height, 0px));}
+  .wp-site-blocks > header,
+  .wp-site-blocks > footer{flex:0 1 auto;}
+  .wp-site-blocks > main{flex:1 0 auto;}
+  
+  .entry-content > *{position:relative;z-index:10;}
+	
+	/* Necessary to prevent horizontal scrolling with some pro-transitions, possibly with right drawers */
+	.entry-content{overflow-x:hidden;}
+  
+  /* iPhone X safe areas TODO: test this */
+    .entry-content{padding-right:max(var(--wp--style--root--padding-right), env(safe-area-inset-right)) !important;padding-left:max(var(--wp--style--root--padding-left), env(safe-area-inset-left)) !important;}
+    
+/* Visibility */
+  .hide,
+  .screen-reader-text{display:none!important;}
+    
+  .visible-phone {display: none !important;}
+  .visible-tablet {display: none !important;}
+  .hidden-desktop {display: none !important;}
+  @media (min-width: 601px) and (max-width: 979px) {
+    .visible-tablet,
+    .hidden-desktop {display: block !important;}
+    .visible-tablet.flex,
+    .hidden-desktop.flex {display: flex !important;}
+		
+    .visible-tablet.is-layout-flow,
+    .hidden-desktop.is-layout-flow {display: flex !important;}
+    .visible-tablet.wp-block-cover,
+    .hidden-desktop.wp-block-cover {display: flex !important;}
+		
+    .hidden-tablet,
+    .visible-desktop {display: none !important ;}
+  }
+  @media (max-width: 600px) {
+    .visible-phone,
+    .hidden-desktop {display: block !important;}
+		
+    .visible-phone.flex,
+    .hidden-desktop.flex {display: flex !important;}
+    .visible-phone.wp-block-cover,
+    .hidden-desktop.wp-block-cover {display: flex !important;}
+		
+    .visible-phone.is-layout-flow,
+    .hidden-desktop.is-layout-flow {display: flex !important;}
+		
+    .hidden-phone,
+    .visible-desktop {display: none !important;}
+  }
+  
+/* FacetWP */
+	.facetwp-facet input,
+	.facetwp-facet select{border-radius:var(--wp--custom--border-radius);border:1px solid;font-size:var(--wp--preset--font-size--normal);padding:calc(0.667em + 2px) calc(0.667em + 2px);}
+	.facetwp-facet select{padding:calc(0.667em + 1px) 30px calc(0.667em + 1px) calc(0.667em + 2px);}/* 30px matches right padding for search icon */
+	/* Heights are not even... not sure why yet*/
+
+/* Anmations */
+  *[class *= "pro-transition"]{opacity:0;transition:0.8s transform ease-out, 0.8s opacity ease-out;}
+	
+	.pro-transition-slow{transition:1.2s transform ease-out, 1.2s opacity ease-out;}
+  
+  .visible[class *= "pro-transition"],
+  .visible *[class *= "pro-transition"]{opacity:1;transform:translate(0) scale(1);}
+  
+  .pro-transition-delay025{transition-delay:0.25s;}
+  .pro-transition-delay050{transition-delay:0.5s;}
+  .pro-transition-delay075{transition-delay:0.75s;}
+	.pro-transition-delay100{transition-delay:1.0s;}
+	.pro-transition-delay125{transition-delay:1.25s;}
+  .pro-transition-delay150{transition-delay:1.5s;}
+  .pro-transition-delay175{transition-delay:1.75s;}
+  .pro-transition-delay200{transition-delay:2.0s;}
+  
+  .pro-transition-up{transform:translateY(5rem);}
+  .pro-transition-down{transform:translateY(-5rem);}
+  .pro-transition-left{transform:translateX(5rem);}
+  .pro-transition-right{transform:translateX(-5rem);}
+  .pro-transition-uplong{transform:translateY(15rem);}
+  .pro-transition-downlong{transform:translateY(-15rem);}
+  .pro-transition-leftlong{transform:translateX(15rem);}
+  .pro-transition-rightlong{transform:translateX(-15rem);}
+  .pro-transition-zoom{transform:scale(0.5);}
+
+  
+  /* supplement for fontawesome animations */
+    .pro-animate-wave {
+      animation-name: pro-animate-wave;
+      animation-delay: 0s;
+      animation-direction: alternate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function:ease-in-out;
+    }
+    @keyframes pro-animate-wave{
+      0%{transform:rotate(-10deg);}
+      100%{transform:rotate(10deg);}
+    }
+
+    .pro-animate-float {
+      animation-name: pro-animate-float;
+      animation-delay: 0s;
+      animation-direction: alternate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes pro-animate-float{
+      0%{transform:translateY(0.5em);}
+      100%{transform:translateY(-0.5em);}
+    }
+		
+    .pro-animate-slide {
+      animation-name: pro-animate-slide;
+      animation-delay: 0s;
+      animation-direction: alternate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes pro-animate-slide{
+      0%{transform:translateX(0.5em);}
+      100%{transform:translateX(-0.5em);}
+    }
+    
+    

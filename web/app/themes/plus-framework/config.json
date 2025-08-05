@@ -1,0 +1,18 @@
+{
+  "api": {
+    "private": {},
+    "public": {}
+  },
+  "framework": {
+    "domain": true
+  },
+  "resources": {
+    "css": {},
+    "js": {},
+  },
+  "wp": {
+    "menus": {},
+    "post-types": {},
+    "taxonomies": {}
+  }
+}
